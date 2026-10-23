@@ -1,8 +1,9 @@
 // Download page: three questions (where the game was bought, its language, which mods), then the matching zips and the install steps.
-// The mod list is mods.js; the published files are releases.json (written by tools/publish.ps1).
+// The mod list is mods.json (also read by tools/publish.ps1 for the repository's README); the published files are releases.json
+// (written by tools/publish.ps1).
 (function () {
     'use strict';
-    var SITE = window.K3_SITE, MODS = window.K3_MODS;
+    var SITE = { repo: '' }, MODS = [];
 
     var T = {
         ru: {
@@ -228,7 +229,7 @@
         var links = [];
         if (SITE.forum) links.push([SITE.forum, t('fb_forum')]);
         if (SITE.steamGuide) links.push([SITE.steamGuide, t('fb_steam')]);
-        links.push(['https://github.com/' + SITE.repo + '/issues', t('fb_github')]);
+        if (SITE.repo) links.push(['https://github.com/' + SITE.repo + '/issues', t('fb_github')]);
         $('feedback-links').innerHTML = links.map(function (l) {
             return '<li><a href="' + l[0] + '" target="_blank" rel="noopener">' + l[1] + '</a></li>';
         }).join('');
@@ -257,9 +258,15 @@
         });
     });
 
+    function load(file) {
+        return fetch(file, { cache: 'no-cache' }).then(function (r) { if (!r.ok) throw new Error(r.status); return r.json(); });
+    }
+
     setLang(initialLang());
-    fetch('releases.json', { cache: 'no-cache' })
-        .then(function (r) { if (!r.ok) throw new Error(r.status); return r.json(); })
-        .then(function (data) { releases = data; render(); })
-        .catch(function () { releasesFailed = true; render(); });
+    Promise.all([load('mods.json'), load('releases.json')])
+        .then(function (data) { SITE = data[0]; MODS = data[0].mods; releases = data[1]; render(); })
+        .catch(function () {
+            releasesFailed = true;
+            load('mods.json').then(function (site) { SITE = site; MODS = site.mods; render(); }).catch(render);
+        });
 })();
