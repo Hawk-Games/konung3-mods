@@ -1,5 +1,40 @@
 {
     "mods":  {
-
+                 "controls":  {
+                                  "version":  "1.0.0",
+                                  "tag":  "controls-1.0.0",
+                                  "files":  {
+                                                "ru":  {
+                                                           "name":  "controls-1.0.0.zip",
+                                                           "url":  "https://github.com/Hawk-Games/konung3-mods/releases/download/controls-1.0.0/controls-1.0.0.zip",
+                                                           "size":  109331,
+                                                           "sha256":  "1a238a30a08a5d1acbd3aeb2403325eb39f8c11492cb834bf9316eeeef154c36"
+                                                       },
+                                                "en":  {
+                                                           "name":  "controls-1.0.0-en.zip",
+                                                           "url":  "https://github.com/Hawk-Games/konung3-mods/releases/download/controls-1.0.0/controls-1.0.0-en.zip",
+                                                           "size":  109075,
+                                                           "sha256":  "116ac80986e82522003f992be02730f51575ea5119caece5710f30f1bb25d613"
+                                                       }
+                                            }
+                              },
+                 "visuals":  {
+                                 "version":  "1.0.0",
+                                 "tag":  "visuals-and-fixes-1.0.0",
+                                 "files":  {
+                                               "ru":  {
+                                                          "name":  "visuals-and-fixes-1.0.0.zip",
+                                                          "url":  "https://github.com/Hawk-Games/konung3-mods/releases/download/visuals-and-fixes-1.0.0/visuals-and-fixes-1.0.0.zip",
+                                                          "size":  162728008,
+                                                          "sha256":  "130bf62aa96b775dd9b82178cee3aee18a109157ac4f4af8b5622330daa05a14"
+                                                      },
+                                               "en":  {
+                                                          "name":  "visuals-and-fixes-1.0.0-en.zip",
+                                                          "url":  "https://github.com/Hawk-Games/konung3-mods/releases/download/visuals-and-fixes-1.0.0/visuals-and-fixes-1.0.0-en.zip",
+                                                          "size":  162302526,
+                                                          "sha256":  "638b29b97f8116dd0a5a8656108d65560ea31c5ea18cb9a4471c59275b3b66c2"
+                                                      }
+                                           }
+                             }
              }
 }
