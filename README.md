@@ -15,7 +15,7 @@
 
 **Антивирусы.** Вирусов в модах нет: архивы проверены крупными антивирусами (Kaspersky, ESET, Microsoft Defender, Bitdefender, Avast, Dr.Web, Malwarebytes). Если ваш антивирус всё же предупредит, это ложное срабатывание, напишите нам в Issues.
 
-[Все архивы](https://github.com/Hawk-Games/konung3-mods/releases). Ошибки и пожелания: [Issues](https://github.com/Hawk-Games/konung3-mods/issues).
+[Все архивы](https://github.com/Hawk-Games/konung3-mods/releases). Ошибки и пожелания: [Issues](https://github.com/Hawk-Games/konung3-mods/issues), [тема на форуме](https://konung.topbb.ru/viewtopic.php?id=420).
 
 ## English
 
@@ -34,4 +34,4 @@
 
 **Antivirus.** The mods contain no viruses: the archives are checked by the major antivirus programs (Kaspersky, ESET, Microsoft Defender, Bitdefender, Avast, Dr.Web, Malwarebytes). If your antivirus still warns you, it is a false alarm; tell us in Issues.
 
-[All archives](https://github.com/Hawk-Games/konung3-mods/releases). Bugs and wishes: [Issues](https://github.com/Hawk-Games/konung3-mods/issues).
+[All archives](https://github.com/Hawk-Games/konung3-mods/releases). Bugs and wishes: [Issues](https://github.com/Hawk-Games/konung3-mods/issues), [forum topic](https://konung.topbb.ru/viewtopic.php?id=420).

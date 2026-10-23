@@ -1,6 +1,6 @@
 {
     "repo": "Hawk-Games/konung3-mods",
-    "forum": "",
+    "forum": "https://konung.topbb.ru/viewtopic.php?id=420",
     "steamGuide": "",
     "readme": {
         "ru": {
@@ -33,6 +33,39 @@
             "steamGuide": "Steam guide"
         }
     },
+    "posts": {
+        "ru": {
+            "short": "Князь 3",
+            "fits": "Для версий: {langs}, GOG и Steam.",
+            "langs": { "ru": "русская", "en": "английская" },
+            "and": " и ",
+            "install": "Установка",
+            "steps": ["Откройте страницу загрузки и выберите свою версию игры.", "Распакуйте архив в папку игры, рядом с Konung3.exe."],
+            "safe": "Сохранения и файлы игры мод не меняет, удалить его можно в любой момент.",
+            "download": "Скачать",
+            "version": "версия",
+            "shots": "Скриншоты",
+            "attached": "во вложениях",
+            "below": "Описание на русском — ниже.",
+            "tagsLabel": "Теги",
+            "tags": ["Князь 3", "Новая династия", "Konung 3", "мод"]
+        },
+        "en": {
+            "short": "Konung 3",
+            "fits": "For the {langs} editions, GOG and Steam.",
+            "langs": { "ru": "Russian", "en": "English" },
+            "and": " and ",
+            "install": "How to install",
+            "steps": ["Open the download page and pick your edition of the game.", "Unzip the archive into the game folder, next to Konung3.exe."],
+            "safe": "The mod does not change your saves or the game files, and you can remove it at any time.",
+            "download": "Download",
+            "version": "version",
+            "shots": "Screenshots",
+            "attached": "attached",
+            "tagsLabel": "Tags",
+            "tags": ["Konung 3", "Ties of the Dynasty", "Князь 3", "mod"]
+        }
+    },
     "mods": [
         {
             "id": "visuals", "langs": ["ru", "en"],
@@ -40,7 +73,52 @@
             "about": {
                 "ru": "Игра работает на современной Windows: окно на весь экран без падений, любое разрешение, чёткий интерфейс и шрифт, вернувшиеся текстуры огня и дыма, часы, пауза и ускорение.",
                 "en": "The game runs on modern Windows: a full-screen window without crashes, any resolution, a sharp interface and font, a clock, pause and speed buttons."
-            }
+            },
+            "post": {
+                "ru": {
+                    "title": "«Князь 3» на современных мониторах",
+                    "pitch": "Играйте в «Князя 3» на Windows 10 и 11 в родном разрешении монитора: без вылетов, с чётким интерфейсом и широкоэкранными меню.",
+                    "points": [
+                        "Исправляет игру на Windows 11: без мода она там падает в полноэкранном режиме, с модом идёт в окне без рамки на весь монитор, а Alt+Tab и выход больше её не роняют.",
+                        "Любое разрешение от 1024×768 до разрешения вашего монитора, проверено до 2560×1440. Без мода игра знает только три размера.",
+                        "Широкие экраны 16:9 и 16:10: главное меню, настройки, загрузка, сохранение и создание героя дорисованы по краям, а не растянуты.",
+                        "Интерфейс подстраивается под экран, шрифт перерисован: текст чёткий даже на 1440p.",
+                        "Окна, карта мира, портреты и значки предметов перерисованы в два раза чётче.",
+                        "Вернулись огонь, дым, искры и эффекты заклинаний, тени стали чётче.",
+                        "Персонажи у края экрана больше не замирают в одной позе.",
+                        "Часы, пауза и ускорение ×2 и ×4. Камера отдаляется дальше и не дёргается у края карты.",
+                        "Подсказка к каждому пункту настроек: наведите на него курсор."
+                    ],
+                    "tags": ["широкий экран", "высокое разрешение", "16:9", "Windows 10", "Windows 11", "исправление вылетов"],
+                    "extra": "В Steam после распаковки один раз запустите visuals-setup.bat из папки игры: он выключает рекламный лаунчер перед игрой, это единственное, что меняется в папке игры."
+                },
+                "en": {
+                    "title": "Konung 3 on modern monitors",
+                    "pitch": "Play Konung 3 on Windows 10 and 11 at your monitor's native resolution: no crashes, a sharp interface and widescreen menus.",
+                    "points": [
+                        "Fixes the game on Windows 11: without the mod it crashes there in fullscreen; with it the game runs in a borderless window that fills the monitor, and Alt+Tab or quitting no longer crash it.",
+                        "Any resolution from 1024×768 up to your monitor's, tested up to 2560×1440. Without the mod the game knows only three sizes.",
+                        "Wide screens, 16:9 and 16:10: the main menu, settings, load, save and new hero screens have painted-in sides instead of being stretched.",
+                        "The interface scales with the screen and the font is redrawn, so text stays sharp even at 1440p.",
+                        "Windows, the world map, portraits and item icons redrawn at twice the detail.",
+                        "Sharper shadows, and characters at the screen edge no longer freeze in one pose.",
+                        "A clock, pause and 2x and 4x speed. The camera zooms out further and stays steady at the map edge.",
+                        "Help for every setting: hover the row."
+                    ],
+                    "tags": ["widescreen", "high resolution", "16:9", "Windows 10", "Windows 11", "crash fix"],
+                    "extra": "On Steam, run visuals-setup.bat from the game folder once after unzipping: it turns off the advert launcher before the game, the only thing changed in the game folder."
+                }
+            },
+            "pictures": [
+                { "file": "01-menu-en.jpg", "lang": "en", "en": "The main menu on a wide screen (English game)" },
+                { "file": "01-menu.jpg", "lang": "ru", "ru": "Главное меню на широком экране (русская игра)" },
+                { "file": "02-world.jpg", "ru": "Часы, пауза и ускорение вверху экрана", "en": "The clock, pause and speed at the top" },
+                { "file": "03-inventory-en.jpg", "lang": "en", "en": "Sharp windows and text (English game)" },
+                { "file": "03-inventory.jpg", "lang": "ru", "ru": "Чёткие окна и шрифт (русская игра)" },
+                { "file": "04-settings-en.jpg", "lang": "en", "en": "Any resolution and help for every setting (English game)" },
+                { "file": "04-settings.jpg", "lang": "ru", "ru": "Любое разрешение и подсказки к настройкам (русская игра)" },
+                { "file": "05-map.jpg", "ru": "Карта мира", "en": "The world map" }
+            ]
         },
         {
             "id": "controls", "langs": ["ru", "en"],
@@ -48,7 +126,35 @@
             "about": {
                 "ru": "Клавиши 1–6 выбирают героев, R меняет оружие, E достаёт и убирает его, пробел ставит паузу, WASD двигает камеру. Все клавиши настраиваются.",
                 "en": "Keys 1–6 select the party, R switches weapons, E draws and sheathes them, Space pauses, WASD pans the camera. Every key can be changed."
-            }
+            },
+            "post": {
+                "ru": {
+                    "title": "Удобное управление для «Князя 3»",
+                    "pitch": "Клавиши, к которым вы привыкли в современных играх.",
+                    "points": [
+                        "1–6 выбирают героя, двойное нажатие наводит на него камеру.",
+                        "R меняет оружие ближнего и дальнего боя, E достаёт и убирает его.",
+                        "Пробел ставит игру на паузу (вместе с модом Visuals & Fixes).",
+                        "WASD и стрелки двигают камеру, даже на паузе."
+                    ],
+                    "tags": ["управление", "горячие клавиши", "WASD"]
+                },
+                "en": {
+                    "title": "Modern controls for Konung 3",
+                    "pitch": "The keys you are used to from modern games.",
+                    "points": [
+                        "1–6 select a hero, a double press moves the camera to them.",
+                        "R switches between melee and ranged weapons, E draws and sheathes them.",
+                        "Space pauses the game (together with the Visuals & Fixes mod).",
+                        "WASD and the arrow keys move the camera, even while paused."
+                    ],
+                    "tags": ["controls", "hotkeys", "WASD"]
+                }
+            },
+            "pictures": [
+                { "file": "keys-en.jpg", "lang": "en", "en": "The mod's keys" },
+                { "file": "keys-ru.jpg", "lang": "ru", "ru": "Клавиши мода" }
+            ]
         },
         {
             "id": "traders", "langs": ["ru"],
