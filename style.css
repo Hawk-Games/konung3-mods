@@ -73,12 +73,14 @@ h3 { font-size: 1rem; font-weight: 600; margin-top: 10px; margin-bottom: -6px; }
 .mod input { margin: 5px 0 0; width: 18px; height: 18px; accent-color: var(--accent); }
 .mod .name { font-weight: 600; }
 .mod .ver { color: var(--muted); font-weight: 400; font-size: .9rem; margin-left: 6px; }
-.mod .about, .mod .more, .mod .tag { grid-column: 2; }
+.mod .about, .mod .fits, .mod .more, .mod .tag { grid-column: 2; }
+.mod .fits { color: var(--muted); font-size: .88rem; }
 .mod .about { color: var(--muted); font-size: .95rem; max-width: 34em; }
 .mod .more, .mod .tag { font-size: .88rem; }
+.mod .more a + a { margin-left: 16px; }
 .mod .tag { color: var(--off); }
 .mod.off { cursor: default; }
-.mod.off .name, .mod.off .about { color: var(--off); }
+.mod.off .name, .mod.off .about, .mod.off .fits { color: var(--off); }
 
 /* downloads: one row per archive */
 .downloads { display: grid; }

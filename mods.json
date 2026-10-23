@@ -1,14 +1,13 @@
 {
     "repo": "Hawk-Games/konung3-mods",
     "forum": "https://konung.topbb.ru/viewtopic.php?id=420",
-    "steamGuide": "",
     "readme": {
         "ru": {
             "title": "Моды для «Князь 3: Новая династия»",
             "helper": "Помощник по установке",
             "helperText": "спросит, где куплена игра и на каком она языке, покажет, какие моды к ней подходят, даст ссылки на архивы и шаги установки.",
-            "head": ["Мод", "Что делает", "Язык игры", "Выпуск", "Руководство"],
-            "langs": { "ru": "русский", "en": "английский" },
+            "head": ["Мод", "Что делает", "Версии игры", "Выпуск", "Руководство"],
+            "editions": { "ru_en": "GOG и Steam: русская и английская", "ru": "GOG и Steam: только русская" },
             "soon": "скоро",
             "guide": "руководство",
             "files": "Все архивы",
@@ -21,8 +20,8 @@
             "title": "Mods for Konung 3: Ties of the Dynasty",
             "helper": "Install helper",
             "helperText": "asks where you bought the game and which language it is in, shows which mods fit it, and gives the archive links and the install steps.",
-            "head": ["Mod", "What it does", "Game language", "Release", "Guide"],
-            "langs": { "ru": "Russian", "en": "English" },
+            "head": ["Mod", "What it does", "Game editions", "Release", "Guide"],
+            "editions": { "ru_en": "GOG and Steam: Russian and English", "ru": "GOG and Steam: Russian only" },
             "soon": "coming soon",
             "guide": "guide",
             "russianGuide": "guide (Russian)",
@@ -69,6 +68,7 @@
     "mods": [
         {
             "id": "visuals", "langs": ["ru", "en"],
+            "steamGuide": "https://steamcommunity.com/sharedfiles/filedetails/?id=3825359323",
             "title": { "ru": "Visuals & Fixes", "en": "Visuals & Fixes" },
             "about": {
                 "ru": "Игра работает на современной Windows: окно на весь экран без падений, любое разрешение, чёткий интерфейс и шрифт, вернувшиеся текстуры огня и дыма, часы, пауза и ускорение.",
@@ -122,6 +122,7 @@
         },
         {
             "id": "controls", "langs": ["ru", "en"],
+            "steamGuide": "https://steamcommunity.com/sharedfiles/filedetails/?id=3825399979",
             "title": { "ru": "Controls", "en": "Controls" },
             "about": {
                 "ru": "Клавиши 1–6 выбирают героев, R меняет оружие, E достаёт и убирает его, пробел ставит паузу, WASD двигает камеру. Все клавиши настраиваются.",

@@ -19,7 +19,8 @@
             hint_gog: 'Язык виден по надписям в главном меню игры.',
             hint_steam: 'В Steam: правый щелчок по игре → «Свойства» → «Язык».',
             q_mods: 'Какие моды поставить',
-            ru_only: 'Только для русской версии игры',
+            fits_ru_en: 'Подходит: GOG и Steam, русская и английская версии игры',
+            fits_ru: 'Подходит: GOG и Steam, только русская версия игры',
             soon: 'Скоро',
             more: 'Подробнее о моде',
             version: 'версия',
@@ -65,7 +66,8 @@
             hint_gog: 'You can tell by the text of the game’s main menu.',
             hint_steam: 'In Steam: right-click the game → Properties → Language.',
             q_mods: 'Which mods to install',
-            ru_only: 'Russian game only',
+            fits_ru_en: 'Fits: GOG and Steam, the Russian and English editions',
+            fits_ru: 'Fits: GOG and Steam, the Russian edition only',
             soon: 'Coming soon',
             more: 'About this mod',
             version: 'version',
@@ -167,13 +169,18 @@
             if (rel) name.appendChild(el('span', 'ver', t('version') + ' ' + rel.version));
             row.appendChild(name);
             row.appendChild(el('span', 'about')).textContent = mod.about[state.lang];
-            if (!fits) row.appendChild(el('span', 'tag', t('ru_only')));
-            else if (!rel) row.appendChild(el('span', 'tag', releasesFailed ? t('no_list') : t('soon')));
-            var more = el('a', 'more');
-            more.href = guideUrl(mod);
-            more.target = '_blank';
-            more.rel = 'noopener';
-            more.textContent = t('more');
+            row.appendChild(el('span', 'fits', t('fits_' + mod.langs.join('_'))));
+            if (!rel) row.appendChild(el('span', 'tag', releasesFailed ? t('no_list') : t('soon')));
+            // the mod's guide, and its Steam guide once it has one ("steamGuide" of the mod in mods.json)
+            var more = el('span', 'more');
+            [[guideUrl(mod), t('more')], [mod.steamGuide, t('fb_steam')]].forEach(function (l) {
+                if (!l[0]) return;
+                var a = more.appendChild(el('a'));
+                a.href = l[0];
+                a.target = '_blank';
+                a.rel = 'noopener';
+                a.textContent = l[1];
+            });
             if (rel) row.appendChild(more);
             list.appendChild(row);
         });
@@ -218,7 +225,9 @@
     function renderFeedback() {
         var links = [];
         if (SITE.forum) links.push([SITE.forum, t('fb_forum')]);
-        if (SITE.steamGuide) links.push([SITE.steamGuide, t('fb_steam')]);
+        MODS.forEach(function (mod) {
+            if (mod.steamGuide) links.push([mod.steamGuide, t('fb_steam') + ': ' + mod.title[state.lang]]);
+        });
         if (SITE.repo) links.push(['https://github.com/' + SITE.repo + '/issues', t('fb_github')]);
         $('feedback-links').innerHTML = links.map(function (l) {
             return '<li><a href="' + l[0] + '" target="_blank" rel="noopener">' + l[1] + '</a></li>';
