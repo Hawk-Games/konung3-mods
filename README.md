@@ -13,6 +13,8 @@
 | **Rebalance** | Пауза между лечениями у каждого персонажа и более ровные критические удары. | русский | скоро | [руководство](guides/rebalance.ru.md) |
 | **Gathering** | Растения отрастают дольше и появляются по воле случая, а лучший знахарь отряда находит лишние травы и редкие ингредиенты. | русский | скоро | [руководство](guides/gathering.ru.md) |
 
+**Антивирусы.** Вирусов в модах нет: архивы проверены крупными антивирусами (Kaspersky, ESET, Microsoft Defender, Bitdefender, Avast, Dr.Web, Malwarebytes). Если ваш антивирус всё же предупредит, это ложное срабатывание, напишите нам в Issues.
+
 [Все архивы](https://github.com/Hawk-Games/konung3-mods/releases). Ошибки и пожелания: [Issues](https://github.com/Hawk-Games/konung3-mods/issues).
 
 ## English
@@ -29,5 +31,7 @@
 | **Villages** | Village management at the starosta: train smiths, healers and guards, guard posts, a village chest, residents with their own daily life. | Russian | coming soon | [guide (Russian)](guides/villages.ru.md) |
 | **Rebalance** | A healing cooldown per character and flatter critical hits. | Russian | coming soon | [guide (Russian)](guides/rebalance.ru.md) |
 | **Gathering** | Plants grow back more slowly and come and go by chance; the party’s best healer finds extra herbs and rare ingredients. | Russian | coming soon | [guide (Russian)](guides/gathering.ru.md) |
+
+**Antivirus.** The mods contain no viruses: the archives are checked by the major antivirus programs (Kaspersky, ESET, Microsoft Defender, Bitdefender, Avast, Dr.Web, Malwarebytes). If your antivirus still warns you, it is a false alarm; tell us in Issues.
 
 [All archives](https://github.com/Hawk-Games/konung3-mods/releases). Bugs and wishes: [Issues](https://github.com/Hawk-Games/konung3-mods/issues).

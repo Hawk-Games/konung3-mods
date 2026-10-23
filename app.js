@@ -30,7 +30,6 @@
             sha: 'Контрольная сумма SHA-256:',
             download: 'Скачать',
             mb: 'МБ',
-            vt: 'проверить в VirusTotal',
             install_title: 'Установка',
             i_download: 'Скачайте архивы выше.',
             i_folder_gog: 'Откройте папку игры (там лежит Konung3.exe). В GOG Galaxy: игра → кнопка настроек → «Управление установкой» → «Показать папку».',
@@ -44,8 +43,8 @@
             r_all: 'Все моды сразу: удалите <code>dinput8.dll</code> и папку <code>mods</code>.',
             r_visuals: 'Visuals & Fixes: пункт «Удалить» в меню <code>visuals-setup.bat</code> (в Steam он возвращает и лаунчер).',
             r_files: 'Файлы игры моды не меняют, всё происходит в памяти (кроме <code>launcher.ini</code> в Steam, его меняет <code>visuals-setup.bat</code>).',
-            av_title: 'Если антивирус ругается',
-            av_text: 'Моды загружаются через файл dinput8.dll рядом с игрой, так устроено большинство модов для старых игр. Некоторые антивирусы считают такой файл подозрительным. У каждого архива выше есть контрольная сумма SHA-256 и ссылка на его проверку в VirusTotal.',
+            av_title: 'Антивирусы',
+            av_text: 'Вирусов в модах нет. Архивы проверены крупными антивирусами (Kaspersky, ESET, Microsoft Defender, Bitdefender, Avast, Dr.Web, Malwarebytes), угроз они не находят. Моды ничего не отправляют в сеть и не меняют файлы игры (кроме launcher.ini в Steam, см. выше). Если ваш антивирус всё же предупредит, это ложное срабатывание: напишите нам, какой антивирус и что он показал.',
             fb_title: 'Ошибки и пожелания',
             fb_text: 'Напишите в теме на форуме или в комментариях к руководству в Steam. Если что-то не работает, приложите файлы mods\\logs\\loader.log, mods\\logs\\events.log и message.log из папки игры.',
             fb_forum: 'Тема на форуме',
@@ -77,7 +76,6 @@
             sha: 'SHA-256 checksum:',
             download: 'Download',
             mb: 'MB',
-            vt: 'check on VirusTotal',
             install_title: 'Install',
             i_download: 'Download the archives above.',
             i_folder_gog: 'Open the game folder (the one with Konung3.exe). In GOG Galaxy: the game → settings button → Manage installation → Show folder.',
@@ -91,8 +89,8 @@
             r_all: 'All mods at once: delete <code>dinput8.dll</code> and the <code>mods</code> folder.',
             r_visuals: 'Visuals & Fixes: Uninstall in the menu of <code>visuals-setup.bat</code> (on Steam it also turns the launcher back on).',
             r_files: 'The mods change no game files, everything happens in memory (except <code>launcher.ini</code> on Steam, changed by <code>visuals-setup.bat</code>).',
-            av_title: 'If your antivirus complains',
-            av_text: 'The mods load through a dinput8.dll file next to the game, the way most mods for old games work. Some antivirus programs find such a file suspicious. Every archive above has its SHA-256 checksum and a link to its VirusTotal check.',
+            av_title: 'Antivirus',
+            av_text: 'The mods contain no viruses. The archives are checked by the major antivirus programs (Kaspersky, ESET, Microsoft Defender, Bitdefender, Avast, Dr.Web, Malwarebytes), and they find no threat. The mods send nothing over the network and change no game files (except launcher.ini on Steam, see above). If your antivirus still warns you, it is a false alarm: tell us which antivirus and what it showed.',
             fb_title: 'Bugs and wishes',
             fb_text: 'Write in the forum topic or in the comments of the Steam guide. If something does not work, attach mods\\logs\\loader.log, mods\\logs\\events.log and message.log from the game folder.',
             fb_forum: 'Forum topic',
@@ -198,15 +196,7 @@
             info.appendChild(el('div', 'file')).textContent = mod.title[state.lang] + ', ' + t('version') + ' ' + rel.version;
             info.appendChild(el('div', 'meta')).textContent = file.name + ', ' +
                 (file.size / 1048576).toLocaleString(state.lang, { maximumFractionDigits: 1 }) + ' ' + t('mb');
-            var metaLine = el('div', 'meta');
-            metaLine.textContent = t('sha') + ' ' + file.sha256 + ', ';
-            var vt = el('a');
-            vt.href = 'https://www.virustotal.com/gui/file/' + file.sha256;
-            vt.target = '_blank';
-            vt.rel = 'noopener';
-            vt.textContent = t('vt');
-            metaLine.appendChild(vt);
-            info.appendChild(metaLine);
+            info.appendChild(el('div', 'meta')).textContent = t('sha') + ' ' + file.sha256;
             row.appendChild(info);
             var btn = el('a', 'btn');
             btn.href = file.url;

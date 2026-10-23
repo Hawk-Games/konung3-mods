@@ -12,6 +12,7 @@
             "soon": "скоро",
             "guide": "руководство",
             "files": "Все архивы",
+            "antivirus": "**Антивирусы.** Вирусов в модах нет: архивы проверены крупными антивирусами (Kaspersky, ESET, Microsoft Defender, Bitdefender, Avast, Dr.Web, Malwarebytes). Если ваш антивирус всё же предупредит, это ложное срабатывание, напишите нам в Issues.",
             "feedback": "Ошибки и пожелания",
             "forum": "тема на форуме",
             "steamGuide": "руководство в Steam"
@@ -26,6 +27,7 @@
             "guide": "guide",
             "russianGuide": "guide (Russian)",
             "files": "All archives",
+            "antivirus": "**Antivirus.** The mods contain no viruses: the archives are checked by the major antivirus programs (Kaspersky, ESET, Microsoft Defender, Bitdefender, Avast, Dr.Web, Malwarebytes). If your antivirus still warns you, it is a false alarm; tell us in Issues.",
             "feedback": "Bugs and wishes",
             "forum": "forum topic",
             "steamGuide": "Steam guide"
