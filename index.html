@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Konung 3 Mods</title>
+<meta name="description" content="Моды для «Князь 3: Новая династия»: выберите свою версию игры и скачайте подходящие архивы. Mods for Konung 3: Ties of the Dynasty.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="wrap">
+  <header class="top">
+    <span class="brand" data-t="brand"></span>
+    <span class="lang" role="group" aria-label="Language">
+      <button type="button" data-lang="ru">Русский</button>
+      <button type="button" data-lang="en">English</button>
+    </span>
+  </header>
+
+  <main>
+    <h1 data-t="title"></h1>
+    <p class="lead" data-t="intro"></p>
+
+    <div class="ask">
+      <h2 data-t="q_edition"></h2>
+      <div class="choices" data-group="edition">
+        <button type="button" data-value="gog">GOG</button>
+        <button type="button" data-value="steam">Steam</button>
+        <button type="button" data-value="other" data-t="opt_other"></button>
+      </div>
+      <p class="note" id="edition-other" hidden data-t="other_note"></p>
+    </div>
+
+    <div class="ask" id="step-lang" hidden>
+      <h2 data-t="q_lang"></h2>
+      <div class="choices" data-group="game">
+        <button type="button" data-value="ru" data-t="game_ru"></button>
+        <button type="button" data-value="en" data-t="game_en"></button>
+      </div>
+      <p class="hint" id="lang-hint"></p>
+    </div>
+
+    <section id="step-mods" hidden>
+      <h2 data-t="q_mods"></h2>
+      <div id="mod-list" class="mods"></div>
+      <p class="note" id="mods-note" hidden></p>
+    </section>
+
+    <section id="step-result" hidden>
+      <h2 data-t="q_result"></h2>
+      <div id="downloads" class="downloads"></div>
+      <h3 data-t="install_title"></h3>
+      <ol id="install"></ol>
+      <h3 data-t="remove_title"></h3>
+      <ul id="remove"></ul>
+      <h3 data-t="av_title"></h3>
+      <p data-t="av_text"></p>
+    </section>
+
+    <section class="feedback">
+      <h2 data-t="fb_title"></h2>
+      <p data-t="fb_text"></p>
+      <ul id="feedback-links" class="links"></ul>
+    </section>
+  </main>
+
+  <footer class="foot" data-t="foot"></footer>
+</div>
+<script src="mods.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
