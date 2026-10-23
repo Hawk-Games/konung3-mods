@@ -1,6 +1,16 @@
 {
     "repo": "Hawk-Games/konung3-mods",
-    "forum": "https://konung.topbb.ru/viewtopic.php?id=420",
+    "topics": [
+        { "id": "konung-visuals", "title": { "ru": "Народный Форум Князя: Visuals & Fixes", "en": "Konung fan forum: Visuals & Fixes (Russian)" },
+          "url": "https://konung.topbb.ru/viewtopic.php?id=422&action=last", "check": "topbb" },
+        { "id": "konung-controls", "title": { "ru": "Народный Форум Князя: Controls", "en": "Konung fan forum: Controls (Russian)" },
+          "url": "https://konung.topbb.ru/viewtopic.php?id=423&action=last", "check": "topbb" },
+        { "id": "oldgames-mods", "title": { "ru": "Old-Games.ru: моды", "en": "Old-Games.ru: the mods (Russian)" },
+          "url": "https://www.old-games.ru/forum/threads/mody-dlja-knjaz-3-novaja-dinastija.121896/", "check": "xenforo1" },
+        { "id": "oldgames-game", "title": { "ru": "Old-Games.ru: тема об игре", "en": "Old-Games.ru: the game (Russian)" },
+          "url": "https://www.old-games.ru/forum/threads/knjaz-3-novaja-dinastija.37473/", "check": "xenforo1" },
+        { "id": "gog", "title": { "ru": "Форум GOG", "en": "GOG forum" }, "url": "", "check": "" }
+    ],
     "readme": {
         "ru": {
             "title": "Моды для «Князь 3: Новая династия»",
@@ -13,7 +23,6 @@
             "files": "Все архивы",
             "antivirus": "**Антивирусы.** Вирусов в модах нет: архивы проверены крупными антивирусами (Kaspersky, ESET, Microsoft Defender, Bitdefender, Avast, Dr.Web, Malwarebytes). Если ваш антивирус всё же предупредит, это ложное срабатывание, напишите нам в Issues.",
             "feedback": "Ошибки и пожелания",
-            "forum": "тема на форуме",
             "steamGuide": "руководство в Steam"
         },
         "en": {
@@ -28,7 +37,6 @@
             "files": "All archives",
             "antivirus": "**Antivirus.** The mods contain no viruses: the archives are checked by the major antivirus programs (Kaspersky, ESET, Microsoft Defender, Bitdefender, Avast, Dr.Web, Malwarebytes). If your antivirus still warns you, it is a false alarm; tell us in Issues.",
             "feedback": "Bugs and wishes",
-            "forum": "forum topic",
             "steamGuide": "Steam guide"
         }
     },
@@ -47,7 +55,12 @@
             "attached": "во вложениях",
             "below": "Описание на русском — ниже.",
             "tagsLabel": "Теги",
-            "tags": ["Князь 3", "Новая династия", "Konung 3", "мод"]
+            "tags": ["Князь 3", "Новая династия", "Konung 3", "мод"],
+            "allIntro": "Каждый мод ставится отдельно: можно взять один или все сразу.",
+            "allSteps": ["Откройте страницу загрузки и выберите свою версию игры.", "Распакуйте архив каждого нужного мода в папку игры, рядом с Konung3.exe."],
+            "allSafe": "Сохранения и файлы игры моды не меняют, удалить любой из них можно в любой момент.",
+            "reply": "Для «Князя 3» вышли моды: {mods}. Файлы игры и сохранения они не меняют. Описание, скриншоты и обсуждение: {topic}",
+            "topic": "[АДРЕС ТЕМЫ С МОДАМИ]"
         },
         "en": {
             "short": "Konung 3",
@@ -62,7 +75,12 @@
             "shots": "Screenshots",
             "attached": "attached",
             "tagsLabel": "Tags",
-            "tags": ["Konung 3", "Ties of the Dynasty", "Князь 3", "mod"]
+            "tags": ["Konung 3", "Ties of the Dynasty", "Князь 3", "mod"],
+            "allIntro": "Each mod installs on its own: take one or all of them.",
+            "allSteps": ["Open the download page and pick your edition of the game.", "Unzip the archive of every mod you want into the game folder, next to Konung3.exe."],
+            "allSafe": "The mods do not change your saves or the game files, and you can remove any of them at any time.",
+            "reply": "Mods for Konung 3 are out: {mods}. They change neither the game files nor your saves. Description, screenshots and discussion: {topic}",
+            "topic": "[LINK TO THE MODS TOPIC]"
         }
     },
     "mods": [

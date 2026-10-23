@@ -47,8 +47,7 @@
             av_title: 'Антивирусы',
             av_text: 'Вирусов в модах нет. Архивы проверены крупными антивирусами (Kaspersky, ESET, Microsoft Defender, Bitdefender, Avast, Dr.Web, Malwarebytes), угроз они не находят. Моды ничего не отправляют в сеть и не меняют файлы игры (кроме launcher.ini в Steam, см. выше). Если ваш антивирус всё же предупредит, это ложное срабатывание: напишите нам, какой антивирус и что он показал.',
             fb_title: 'Ошибки и пожелания',
-            fb_text: 'Напишите в теме на форуме или в комментариях к руководству в Steam. Если что-то не работает, приложите файлы mods\\logs\\loader.log, mods\\logs\\events.log и message.log из папки игры.',
-            fb_forum: 'Тема на форуме',
+            fb_text: 'Напишите в одной из тем на форумах или в комментариях к руководству в Steam. Если что-то не работает, приложите файлы mods\\logs\\loader.log, mods\\logs\\events.log и message.log из папки игры.',
             fb_steam: 'Руководство в Steam',
             fb_github: 'GitHub (нужна учётная запись)',
             foot: 'Неофициальные моды, сделанные поклонником игры. «Князь 3» принадлежит её правообладателям.'
@@ -94,8 +93,7 @@
             av_title: 'Antivirus',
             av_text: 'The mods contain no viruses. The archives are checked by the major antivirus programs (Kaspersky, ESET, Microsoft Defender, Bitdefender, Avast, Dr.Web, Malwarebytes), and they find no threat. The mods send nothing over the network and change no game files (except launcher.ini on Steam, see above). If your antivirus still warns you, it is a false alarm: tell us which antivirus and what it showed.',
             fb_title: 'Bugs and wishes',
-            fb_text: 'Write in the forum topic or in the comments of the Steam guide. If something does not work, attach mods\\logs\\loader.log, mods\\logs\\events.log and message.log from the game folder.',
-            fb_forum: 'Forum topic',
+            fb_text: 'Write in one of the forum topics or in the comments of the Steam guide. If something does not work, attach mods\\logs\\loader.log, mods\\logs\\events.log and message.log from the game folder.',
             fb_steam: 'Steam guide',
             fb_github: 'GitHub (needs an account)',
             foot: 'Unofficial mods made by a fan of the game. Konung 3 belongs to its rights holders.'
@@ -224,7 +222,10 @@
 
     function renderFeedback() {
         var links = [];
-        if (SITE.forum) links.push([SITE.forum, t('fb_forum')]);
+        // the forum topics about the mods and the game ("topics" in mods.json); one without an address yet is left out
+        (SITE.topics || []).forEach(function (topic) {
+            if (topic.url) links.push([topic.url, topic.title[state.lang]]);
+        });
         MODS.forEach(function (mod) {
             if (mod.steamGuide) links.push([mod.steamGuide, t('fb_steam') + ': ' + mod.title[state.lang]]);
         });

@@ -15,7 +15,7 @@
 
 **Антивирусы.** Вирусов в модах нет: архивы проверены крупными антивирусами (Kaspersky, ESET, Microsoft Defender, Bitdefender, Avast, Dr.Web, Malwarebytes). Если ваш антивирус всё же предупредит, это ложное срабатывание, напишите нам в Issues.
 
-[Все архивы](https://github.com/Hawk-Games/konung3-mods/releases). Ошибки и пожелания: [Issues](https://github.com/Hawk-Games/konung3-mods/issues), [тема на форуме](https://konung.topbb.ru/viewtopic.php?id=420), руководство в Steam: [Visuals & Fixes](https://steamcommunity.com/sharedfiles/filedetails/?id=3825359323), [Controls](https://steamcommunity.com/sharedfiles/filedetails/?id=3825399979).
+[Все архивы](https://github.com/Hawk-Games/konung3-mods/releases). Ошибки и пожелания: [Issues](https://github.com/Hawk-Games/konung3-mods/issues), [Народный Форум Князя: Visuals & Fixes](https://konung.topbb.ru/viewtopic.php?id=422&action=last), [Народный Форум Князя: Controls](https://konung.topbb.ru/viewtopic.php?id=423&action=last), [Old-Games.ru: моды](https://www.old-games.ru/forum/threads/mody-dlja-knjaz-3-novaja-dinastija.121896/), [Old-Games.ru: тема об игре](https://www.old-games.ru/forum/threads/knjaz-3-novaja-dinastija.37473/), руководство в Steam: [Visuals & Fixes](https://steamcommunity.com/sharedfiles/filedetails/?id=3825359323), [Controls](https://steamcommunity.com/sharedfiles/filedetails/?id=3825399979).
 
 ## English
 
@@ -34,4 +34,4 @@
 
 **Antivirus.** The mods contain no viruses: the archives are checked by the major antivirus programs (Kaspersky, ESET, Microsoft Defender, Bitdefender, Avast, Dr.Web, Malwarebytes). If your antivirus still warns you, it is a false alarm; tell us in Issues.
 
-[All archives](https://github.com/Hawk-Games/konung3-mods/releases). Bugs and wishes: [Issues](https://github.com/Hawk-Games/konung3-mods/issues), [forum topic](https://konung.topbb.ru/viewtopic.php?id=420), Steam guide: [Visuals & Fixes](https://steamcommunity.com/sharedfiles/filedetails/?id=3825359323), [Controls](https://steamcommunity.com/sharedfiles/filedetails/?id=3825399979).
+[All archives](https://github.com/Hawk-Games/konung3-mods/releases). Bugs and wishes: [Issues](https://github.com/Hawk-Games/konung3-mods/issues), [Konung fan forum: Visuals & Fixes (Russian)](https://konung.topbb.ru/viewtopic.php?id=422&action=last), [Konung fan forum: Controls (Russian)](https://konung.topbb.ru/viewtopic.php?id=423&action=last), [Old-Games.ru: the mods (Russian)](https://www.old-games.ru/forum/threads/mody-dlja-knjaz-3-novaja-dinastija.121896/), [Old-Games.ru: the game (Russian)](https://www.old-games.ru/forum/threads/knjaz-3-novaja-dinastija.37473/), Steam guide: [Visuals & Fixes](https://steamcommunity.com/sharedfiles/filedetails/?id=3825359323), [Controls](https://steamcommunity.com/sharedfiles/filedetails/?id=3825399979).
