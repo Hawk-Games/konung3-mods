@@ -1,6 +1,8 @@
 {
     "repo": "Hawk-Games/konung3-mods",
     "topics": [
+        { "id": "konung-mods", "title": { "ru": "Народный Форум Князя: тема о модах", "en": "Konung fan forum: the mods (Russian)" },
+          "url": "https://konung.topbb.ru/viewtopic.php?id=419&action=last", "check": "topbb" },
         { "id": "konung-visuals", "title": { "ru": "Народный Форум Князя: Visuals & Fixes", "en": "Konung fan forum: Visuals & Fixes (Russian)" },
           "url": "https://konung.topbb.ru/viewtopic.php?id=422&action=last", "check": "topbb" },
         { "id": "konung-controls", "title": { "ru": "Народный Форум Князя: Controls", "en": "Konung fan forum: Controls (Russian)" },
@@ -105,6 +107,7 @@
                         "Вернулись огонь, дым, искры и эффекты заклинаний, тени стали чётче.",
                         "Персонажи у края экрана больше не замирают в одной позе.",
                         "Часы, пауза и ускорение ×2 и ×4. Камера отдаляется дальше и не дёргается у края карты.",
+                        "В Steam по умолчанию включена вертикальная синхронизация. Ночной вздох отдыхающих жителей выключен.",
                         "Подсказка к каждому пункту настроек: наведите на него курсор."
                     ],
                     "tags": ["широкий экран", "высокое разрешение", "16:9", "Windows 10", "Windows 11", "исправление вылетов"],
@@ -121,6 +124,7 @@
                         "Windows, the world map, portraits and item icons redrawn at twice the detail.",
                         "Sharper shadows, and characters at the screen edge no longer freeze in one pose.",
                         "A clock, pause and 2x and 4x speed. The camera zooms out further and stays steady at the map edge.",
+                        "VSync is on by default on Steam, and the villagers’ night rest sound is muted.",
                         "Help for every setting: hover the row."
                     ],
                     "tags": ["widescreen", "high resolution", "16:9", "Windows 10", "Windows 11", "crash fix"],
@@ -154,6 +158,7 @@
                         "1–6 выбирают героя, двойное нажатие наводит на него камеру.",
                         "R меняет оружие ближнего и дальнего боя, E достаёт и убирает его.",
                         "Пробел ставит игру на паузу (вместе с модом Visuals & Fixes).",
+                        "T переводит часы на один игровой час вперёд.",
                         "WASD и стрелки двигают камеру, даже на паузе."
                     ],
                     "tags": ["управление", "горячие клавиши", "WASD"]
@@ -165,14 +170,15 @@
                         "1–6 select a hero, a double press moves the camera to them.",
                         "R switches between melee and ranged weapons, E draws and sheathes them.",
                         "Space pauses the game (together with the Visuals & Fixes mod).",
+                        "T advances the clock by one in-game hour.",
                         "WASD and the arrow keys move the camera, even while paused."
                     ],
                     "tags": ["controls", "hotkeys", "WASD"]
                 }
             },
             "pictures": [
-                { "file": "keys-en.jpg", "lang": "en", "en": "The mod's keys" },
-                { "file": "keys-ru.jpg", "lang": "ru", "ru": "Клавиши мода" }
+                { "file": "keys-hour-en.jpg", "lang": "en", "en": "Controls, including T to advance the clock" },
+                { "file": "keys-hour-ru.jpg", "lang": "ru", "ru": "Клавиши управления, включая T для перевода часов" }
             ]
         },
         {
@@ -192,12 +198,35 @@
             }
         },
         {
-            "id": "rebalance", "langs": ["ru"],
+            "id": "rebalance", "langs": ["ru", "en"],
             "title": { "ru": "Rebalance", "en": "Rebalance" },
             "about": {
                 "ru": "Пауза между лечениями у каждого персонажа и более ровные критические удары.",
                 "en": "A healing cooldown per character and flatter critical hits."
-            }
+            },
+            "post": {
+                "ru": {
+                    "title": "Лечение и боевые навыки",
+                    "pitch": "Меньше бесконечного лечения, понятнее боевые навыки.",
+                    "points": [
+                        "После лечения у каждого героя своя пауза в 10 секунд. Если лечить некого или рано, предмет не расходуется.",
+                        "Критические удары, уклонения и Тренировка перебалансированы. Лидерство развивает только главный герой."
+                    ],
+                    "tags": ["баланс", "бой", "лечение"]
+                },
+                "en": {
+                    "title": "Healing and combat skills",
+                    "pitch": "Less healing spam and clearer combat skills.",
+                    "points": [
+                        "Healing has a 10-second cooldown per character. An item is kept if healing is on cooldown or nobody is hurt.",
+                        "Critical hits, dodges and Training have been rebalanced. Only the main hero can develop Leadership."
+                    ],
+                    "tags": ["balance", "combat", "healing"]
+                }
+            },
+            "pictures": [
+                { "file": "01-cooldown.jpg", "ru": "Оставшееся время до следующего лечения", "en": "Time remaining before the next heal" }
+            ]
         },
         {
             "id": "gathering", "langs": ["ru"],
@@ -205,7 +234,30 @@
             "about": {
                 "ru": "Растения отрастают дольше и появляются по воле случая, а лучший знахарь отряда находит лишние травы и редкие ингредиенты.",
                 "en": "Plants grow back more slowly and come and go by chance; the party’s best healer finds extra herbs and rare ingredients."
-            }
+            },
+            "post": {
+                "ru": {
+                    "title": "Травы и редкие находки",
+                    "pitch": "Сбор трав зависит от места и лучшего знахаря отряда.",
+                    "points": [
+                        "Растения отрастают медленнее. При повторном визите набор доступных мест сбора может измениться.",
+                        "При сборе иногда выпадает дополнительная находка. Зажмите Alt, чтобы подсветить предметы для подбора."
+                    ],
+                    "tags": ["сбор", "травы", "знахарство"]
+                },
+                "en": {
+                    "title": "Herbs and rare finds",
+                    "pitch": "Find more while foraging with a skilled healer in your party.",
+                    "points": [
+                        "Plants grow back more slowly, and available spots can change between visits.",
+                        "Picking a plant can yield an extra find. Hold Alt to highlight objects you can pick up."
+                    ],
+                    "tags": ["gathering", "herbs", "healing"]
+                }
+            },
+            "pictures": [
+                { "file": "01-foraging.jpg", "ru": "Окно сбора растения", "en": "The plant pickup window" }
+            ]
         }
     ]
 }

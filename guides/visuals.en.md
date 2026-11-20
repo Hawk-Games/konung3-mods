@@ -24,7 +24,10 @@ One mod for the picture and the interface:
 - **Fixes.** Walking characters and effects no longer freeze near the screen edge (`[graphics] animation_edge_fix=1`);
   the crash on exit and the "assert" message boxes are handled; shadows are drawn at 2048 pixels (`[graphics] shadow_size`,
   1024 / 2048 / 4096 / 8192; needs Shadows on in the game's Settings). The effect textures (fire, smoke, sparks) are already
-  present in the English game, so nothing has to be restored there.
+  present in the English game, so nothing has to be restored there. Vertical sync is on, also on Steam, where the game has it off,
+  for smoother camera scrolling without tearing (`[graphics] vsync=0`: off).
+- **Quieter nights.** The village men's rest sound is off by default. Set a nonzero `night_sigh_chance` in `[sound]` to hear it again.
+  Set both `[sound]` options to 100 to restore the original frequency and volume.
 - **Clock and speed.** The day and time are shown at the top centre of the world view with three buttons under it:
   **x2**, **pause**, **x4**. A click on x2 or x4 sets that speed and the button then reads **x1**; click x1 to go back to
   normal speed. The other speed button switches straight to its speed. Every map load or travel returns to x1. The speed

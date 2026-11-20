@@ -1,40 +1,58 @@
 {
-    "mods":  {
-                 "controls":  {
-                                  "version":  "1.0.0",
-                                  "tag":  "controls-1.0.0",
-                                  "files":  {
-                                                "ru":  {
-                                                           "name":  "controls-1.0.0.zip",
-                                                           "url":  "https://github.com/Hawk-Games/konung3-mods/releases/download/controls-1.0.0/controls-1.0.0.zip",
-                                                           "size":  109331,
-                                                           "sha256":  "1a238a30a08a5d1acbd3aeb2403325eb39f8c11492cb834bf9316eeeef154c36"
-                                                       },
-                                                "en":  {
-                                                           "name":  "controls-1.0.0-en.zip",
-                                                           "url":  "https://github.com/Hawk-Games/konung3-mods/releases/download/controls-1.0.0/controls-1.0.0-en.zip",
-                                                           "size":  109075,
-                                                           "sha256":  "116ac80986e82522003f992be02730f51575ea5119caece5710f30f1bb25d613"
-                                                       }
-                                            }
-                              },
-                 "visuals":  {
-                                 "version":  "1.0.0",
-                                 "tag":  "visuals-and-fixes-1.0.0",
-                                 "files":  {
-                                               "ru":  {
-                                                          "name":  "visuals-and-fixes-1.0.0.zip",
-                                                          "url":  "https://github.com/Hawk-Games/konung3-mods/releases/download/visuals-and-fixes-1.0.0/visuals-and-fixes-1.0.0.zip",
-                                                          "size":  162728008,
-                                                          "sha256":  "130bf62aa96b775dd9b82178cee3aee18a109157ac4f4af8b5622330daa05a14"
-                                                      },
-                                               "en":  {
-                                                          "name":  "visuals-and-fixes-1.0.0-en.zip",
-                                                          "url":  "https://github.com/Hawk-Games/konung3-mods/releases/download/visuals-and-fixes-1.0.0/visuals-and-fixes-1.0.0-en.zip",
-                                                          "size":  162302526,
-                                                          "sha256":  "638b29b97f8116dd0a5a8656108d65560ea31c5ea18cb9a4471c59275b3b66c2"
-                                                      }
-                                           }
-                             }
-             }
+  "mods": {
+    "controls": {
+      "version": "1.0.1",
+      "tag": "controls-1.0.1",
+      "files": {
+        "ru": {
+          "name": "controls-1.0.1.zip",
+          "url": "https://github.com/Hawk-Games/konung3-mods/releases/download/controls-1.0.1/controls-1.0.1.zip",
+          "size": 113732,
+          "sha256": "e287f422fc4cad3d1944422c5470fbbe2a7a7cdabed5fc61d0c312c3ed010f18"
+        },
+        "en": {
+          "name": "controls-1.0.1-en.zip",
+          "url": "https://github.com/Hawk-Games/konung3-mods/releases/download/controls-1.0.1/controls-1.0.1-en.zip",
+          "size": 113443,
+          "sha256": "cc98045a07437976d41615eb01948468cbf3eeeea4c9a014542a6757325de722"
+        }
+      }
+    },
+    "rebalance": {
+      "version": "1.0.0",
+      "tag": "rebalance-1.0.0",
+      "files": {
+        "ru": {
+          "name": "rebalance-1.0.0.zip",
+          "url": "https://github.com/Hawk-Games/konung3-mods/releases/download/rebalance-1.0.0/rebalance-1.0.0.zip",
+          "size": 112670,
+          "sha256": "5d9370bae4080b05368eeb5c84e3446d7f6dcfb0d817f9bc5a9076875f50657f"
+        },
+        "en": {
+          "name": "rebalance-1.0.0-en.zip",
+          "url": "https://github.com/Hawk-Games/konung3-mods/releases/download/rebalance-1.0.0/rebalance-1.0.0-en.zip",
+          "size": 112144,
+          "sha256": "1bbc56325620980409e7d10479516f758b63588447ec4ed82b213ef8202554d7"
+        }
+      }
+    },
+    "visuals": {
+      "version": "1.0.1",
+      "tag": "visuals-and-fixes-1.0.1",
+      "files": {
+        "ru": {
+          "name": "visuals-and-fixes-1.0.1.zip",
+          "url": "https://github.com/Hawk-Games/konung3-mods/releases/download/visuals-and-fixes-1.0.1/visuals-and-fixes-1.0.1.zip",
+          "size": 162736920,
+          "sha256": "a37af441f9ac8a395f7a75ab8e93ae5a3669113b1966ec20457a125aa6bf4cb3"
+        },
+        "en": {
+          "name": "visuals-and-fixes-1.0.1-en.zip",
+          "url": "https://github.com/Hawk-Games/konung3-mods/releases/download/visuals-and-fixes-1.0.1/visuals-and-fixes-1.0.1-en.zip",
+          "size": 162313543,
+          "sha256": "174e4138c2673eedad0849302c525065c7018f85f2d21738820e77f663856bc5"
+        }
+      }
+    }
+  }
 }

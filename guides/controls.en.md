@@ -11,12 +11,13 @@ Unzip the package into the game folder, next to Konung3.exe.
 | Shift+R | Native weapon toggle for all selected members |
 | E | Unsheathe/sheathe weapons of the selected members (the original Space action) |
 | Space | Pause/resume (shared with the pause button of Visuals & Fixes) |
+| T | Advance the clock by one in-game hour |
 | WASD / arrows | Pan the camera, also while paused |
 
 Numbers, R and Space work in the ordinary world view with no open panel or held item. Holding a key triggers once; release and
 press again for another switch. Empty, dead and unselectable positions do nothing. The double-tap uses Windows' double-click
 speed and works while paused. The native weapon-button hints now read "Unsheathe/sheathe weapon ({E})" and "Switch weapon
-({R})" and follow your bindings after a restart. The original 1/2 weapon choice, the R option toggle and the A/S/T hotkeys are
+({R})" and follow your bindings after a restart. The original 1/2 weapon choice, the R option toggle and the A/S hotkeys are
 unbound; the original Space stance action is on E. Other keys stay as they are.
 
 Space needs Visuals & Fixes with `[hud] pause=1`. Configure `[keys]` in `mods\controls\mod.ini`: `select_1`..`select_6`,
