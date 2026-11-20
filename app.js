@@ -145,7 +145,9 @@
         // the rows are rebuilt on every change: keep the keyboard focus on the same checkbox
         var focused = list.contains(document.activeElement) ? document.activeElement.getAttribute('data-mod') : null;
         list.innerHTML = '';
-        MODS.forEach(function (mod) {
+        var published = MODS.filter(function (mod) { return released(mod.id); });
+        var upcoming = MODS.filter(function (mod) { return !released(mod.id); });
+        published.concat(upcoming).forEach(function (mod) {
             var fits = mod.langs.indexOf(state.game) >= 0;
             var rel = released(mod.id);
             var usable = fits && rel && rel.files && rel.files[state.game];
